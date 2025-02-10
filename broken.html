@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs Example</title>
+    <style>
+      /* General Styling */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f4f4f4;
+      }
+
+      /* Tab Buttons */
+      .tabs {
+        display: flex;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 10px;
+      }
+
+      .tab-button {
+        background: #e0e0e0;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px 5px 0 0;
+        margin-right: 5px;
+        transition: background 0.3s ease;
+      }
+
+      .tab-button:hover {
+        background: #d0d0d0;
+      }
+
+      .tab-button.active {
+        background: #007bff;
+        color: white;
+      }
+
+      /* Tab Content */
+      .tab-content {
+        display: none;
+        padding: 20px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script>
+      function openTab(event, tabId) {
+        // Remove 'active' class from all tab buttons
+        document
+          .querySelectorAll(".tab-button")
+          .forEach((btn) => btn.classList.remove("active"));
+
+        // Remove 'active' class from all tab contents
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((content) => content.classList.remove("active"));
+
+        // Add 'active' class to the clicked tab button
+        event.currentTarget.classList.add("active");
+
+        // Show the corresponding tab content
+        document.getElementById(tabId).classList.add("active");
+      }
+    </script>
+  </body>
+</html>

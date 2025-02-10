@@ -14,7 +14,7 @@
     <header>
       <nav>
         <div class="container">
-          <div class="nav-logo">KICK.U</div>
+          <div class="nav-logo">KICK.<span class="logo-u">U</span></div>
           <div class="search-container">
             <input type="text" class="nav-search" placeholder="Search" />
           </div>
@@ -136,6 +136,53 @@
         <div>
       </div>
     </main>
-    <footer></footer>
+    <section class="reviews-main">
+      <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'tab1')">
+          Details
+        </button>
+        <button class="tab-button" onclick="openTab(event, 'tab2')">Reviews</button>
+        <button class="tab-button" onclick="openTab(event, 'tab3')">Discussion</button>
+      </div>
+  
+      <div class="tab-content active" id="tab1">
+        <div class="tab-review">
+          <div class="logo-avatar"><img class="avatar-icon" src="img/coki.jpeg"></i><div class="user-name">Coki<span class="time-stamp">Yesterday</span><div><i class="fa-solid fa-star" id="user-star"></i><i class="fa-solid fa-star" id="user-star"></i><i class="fa-solid fa-star" id="user-star"></i><i class="fa-solid fa-star" id="user-star"></i><i class="fa-solid fa-star" id="user-star"></i> <div class="user-review">
+            gg bang
+          </div></div></div></div>
+         
+        </div>
+      </div>
+  
+      <div class="tab-content" id="tab2">
+        <h2>Tab 2 Content</h2>
+        <p>This is the content for Tab 2.</p>
+      </div>
+  
+      <div class="tab-content" id="tab3">
+        <h2>Tab 3 Content</h2>
+        <p>This is the content for Tab 3.</p>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-desc">
+        <div class="footer-logo">KICK.<span class="logo-u">U</span></div>
+        <div class="footer-tag">KICK.U's business concept is to offer stylish, high-quality footwear, including Air Jordan and other top sneaker brands, at the best price with a commitment to comfort and durability. Since its founding, KICK.U has been dedicated to delivering trendy and reliable shoes for every occasion. The content of this site is copyright-protected and is the property of KICK.U. Customer Service: 0812-7455-0819 (WhatsApp).</div>
+        <div class="social-icons"><a href="https://www.instagram.com/kvnallenn" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a><a href="https://wa.me/6281274550819" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a><a href="https://www.tiktok.com/@4bowl" target="_blank"><i class="fa-brands fa-tiktok fa-2xl"></i></a></div>
+      </div>
+    </footer>
+    <script>
+      function openTab(event, tabId) {
+        document
+          .querySelectorAll(".tab-button")
+          .forEach((btn) => btn.classList.remove("active"));
+
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((content) => content.classList.remove("active"));
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabId).classList.add("active");
+      }
+    </script>
   </body>
 </html>

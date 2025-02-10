@@ -3,10 +3,13 @@
 * {
   font-family: "Satoshi", sans-serif;
   color: #010101;
+  margin: 0;
+  padding: 0;
 }
 
+
 .nav-logo {
-  font-weight: bold;
+  font-weight: 800;
   font-size: 20px;
 }
 
@@ -311,4 +314,149 @@ main {
   .air-jordan, .product-desc {
     max-width: 100%;
   }
+}
+
+
+footer{
+  background-color:#f2f0ea;
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.footer-desc{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-logo{
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.footer-tag{
+  width: 100%;
+  max-width: 700px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.logo-u{
+  color: #a4a4a4;
+}
+
+.social-icons{
+  display: flex;
+  gap: 15px;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.reviews-section{
+  max-width: auto;
+  display: flex;
+  padding: 20px;
+  font-size: 25px;
+  gap: 20px;
+}
+
+.reviews-details,.reviews-disc{
+  color: #a4a4a4;
+  font-weight: 700;
+}
+
+.reviews-reviews{
+  font-weight: 700;
+  color: #010101;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px 5px 0 0;
+  transition: background 0.3s ease;
+  color: #a4a4a4;
+  margin-right: 30px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.tab-button:hover {
+  color: #010101;
+}
+
+.tab-button.active {
+  color: #010101;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 50px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.reviews-main{
+  padding: 20px;
+}
+
+@media screen and (max-width: 431px) {
+  .tab-button{
+    font-size: 20px;
+  }
+}
+
+
+.tab-review{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;  
+}
+
+.user-name{
+  color: #010101;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+
+
+#user-star{
+  color: #edcf5d;
+}
+
+.time-stamp{
+  color: #a4a4a4;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.logo-avatar{
+  display: flex;
+  align-items: center;
+}
+
+.avatar-icon{
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
 }
