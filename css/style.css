@@ -7,7 +7,6 @@
   padding: 0;
 }
 
-
 .nav-logo {
   font-weight: 800;
   font-size: 20px;
@@ -113,13 +112,13 @@ main {
 .product-desc {
   display: flex;
   flex-direction: column;
-  max-width: 50%; 
+  max-width: 50%;
 }
 
 .shoes {
   border-radius: 10px;
-  max-width: 100%; 
-  width: 850px; 
+  max-width: 100%;
+  width: 850px;
 }
 
 @media screen and (min-width: 768px) {
@@ -293,14 +292,15 @@ main {
     font-size: 40px;
   }
   .add-button {
-  padding: auto;
+    padding: auto;
   }
   .fav-button {
-  padding: auto;
+    padding: auto;
   }
 }
 
-.air-jordan, .product-desc {
+.air-jordan,
+.product-desc {
   flex: 1;
   min-width: 300px;
 }
@@ -311,19 +311,19 @@ main {
     align-items: center;
   }
 
-  .air-jordan, .product-desc {
+  .air-jordan,
+  .product-desc {
     max-width: 100%;
   }
 }
 
-
-footer{
-  background-color:#f2f0ea;
+footer {
+  background-color: #f2f0ea;
   margin-top: 100px;
   padding: 40px;
 }
 
-.footer-desc{
+.footer-desc {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -331,23 +331,23 @@ footer{
   gap: 15px;
 }
 
-.footer-logo{
+.footer-logo {
   font-size: 30px;
   font-weight: 800;
 }
 
-.footer-tag{
+.footer-tag {
   width: 100%;
   max-width: 700px;
   flex-wrap: wrap;
   margin: auto;
 }
 
-.logo-u{
+.logo-u {
   color: #a4a4a4;
 }
 
-.social-icons{
+.social-icons {
   display: flex;
   gap: 15px;
   text-align: center;
@@ -355,11 +355,11 @@ footer{
   padding-top: 20px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.reviews-section{
+.reviews-section {
   max-width: auto;
   display: flex;
   padding: 20px;
@@ -367,12 +367,13 @@ a{
   gap: 20px;
 }
 
-.reviews-details,.reviews-disc{
+.reviews-details,
+.reviews-disc {
   color: #a4a4a4;
   font-weight: 700;
 }
 
-.reviews-reviews{
+.reviews-reviews {
   font-weight: 700;
   color: #010101;
 }
@@ -406,72 +407,75 @@ a{
 
 .tab-content {
   display: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  
+  width: 50%;
 }
 
 .tab-content.active {
   display: block;
 }
 
-.reviews-main{
+.reviews-main {
   padding: 20px;
 }
 
 @media screen and (max-width: 431px) {
-  .tab-button{
+  .tab-button {
     font-size: 20px;
   }
 }
 
-@media screen and (min-width: 1025px) {
-  .tab-content{
-    width: 45%;
+@media screen and (max-width: 768px) {
+  .tab-content {
+    width: 100%;
+    flex-wrap: wrap;
   }
-  
 }
 
+@media screen and (max-width: 768px) {
+  aside {
+    margin-top: 25px;
+  }
+}
 
-.tab-review{
-  height: 350px;
+.tab-review {
+  height: 100%;
+  max-height: 450px;
   display: flex;
   flex-direction: column;
-  gap: 17px;  
+  gap: 17px;
   overflow: auto;
-  
 }
 
-.user-name{
+.user-name {
   color: #010101;
   font-weight: 700;
   margin-top: 15px;
   margin-left: 15px;
 }
 
-
-
-#user-star{
+#user-star {
   color: #edcf5d;
 }
 
-.time-stamp{
+.time-stamp {
   color: #a4a4a4;
   font-size: 13px;
   margin-left: 10px;
 }
 
-.logo-avatar{
+.logo-avatar {
   display: flex;
   align-items: center;
 }
 
-.avatar-icon{
+.avatar-icon {
   border-radius: 50%;
   width: 55px;
   height: 55px;
 }
 
-.tab-review::-webkit-scrollbar{
+.tab-review::-webkit-scrollbar {
   width: 6px;
 }
 
@@ -483,5 +487,62 @@ a{
 .tab-review::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
+}
+
+.tab-list {
+  padding-bottom: 15px;
+  padding-left: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+#tab3{
+  font-weight: 600;
+}
+
+.product-d{
+  font-weight: 500;
+}
+
+.ads-aside{
+  font-size: 20px;
+  text-align: center;
+}
+
+.percoba{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+aside{
+  flex: 1;
+}
+
+.ads-product{
+  text-align: center;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.img-pro{
+  gap: 10px;
+}
+
+.ads-jor{
+  border-radius: 10px;
+}
+
+.pro-title, .price-title{
+  text-align: left;
+}
+
+.price-title{
+  font-weight: bold;
 }
 
